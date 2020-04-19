@@ -6,4 +6,4 @@ let login = (username, password) => {
     }
 }
 
-login('admin', 'radical')
+export { login as default }
