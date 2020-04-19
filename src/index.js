@@ -1,4 +1,4 @@
-import l from './login'
+import {} from './login'
 import _ from 'lodash';
 
 function component() {

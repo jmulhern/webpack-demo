@@ -4,10 +4,11 @@ const Path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: ['./src/utils', './src/index.js'],
+  entry: ['./src/utils', './src/index'],
   output: {
-    filename: 'bundle.js',
     path: Path.resolve(__dirname, 'dist'),
+    publicPath: 'public/js',
+    filename: 'bundle.js',
   },
 
   module: {
@@ -32,7 +33,7 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: Path.join(__dirname, 'dist'),
+    contentBase: Path.join(__dirname, 'public'),
     compress: true,
     port: 9000
   }
